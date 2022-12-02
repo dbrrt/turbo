@@ -295,7 +295,7 @@ async fn source(
             EntryRequest::Module(m, p) => RequestVc::module(
                 m.clone(),
                 Value::new(p.clone().into()),
-                QueryMapVc::cell(None),
+                QueryMapVc::none(),
             ),
         })
         .collect();
